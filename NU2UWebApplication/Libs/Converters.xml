@@ -1,0 +1,168 @@
+<?xml version="1.0" standalone="yes"?>
+<UnicodeConverters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.bridgeconn.com/computing/schemas/UnicodeConverters.xsd">
+<TECConverters>
+<TECConverter id="1"> 
+<Language>Marathi</Language>
+<ConverterName>"SHREEDEV708&lt;&gt;Unicode"</ConverterName>
+<LHEncoding>SHREE-DEV-0708</LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>SHREE-DEV-0708.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>
+<TECConverter id="2"> 
+<Language>Marathi</Language>
+<ConverterName>"SHREEDEV708E&lt;&gt;Unicode"</ConverterName>
+<LHEncoding>SHREE-DEV-0708E</LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>SHREE-DEV-0708E.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>
+<TECConverter id="3"> 
+<Language>Marathi</Language>
+<ConverterName>"SHREEDEV714&lt;&gt;Unicode"</ConverterName>
+<LHEncoding>SHREE-DEV-0714</LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>SHREE-DEV-0714.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>
+<TECConverter id="4"> 
+<Language>Marathi</Language>
+<ConverterName>"SHREEDEV715&lt;&gt;Unicode"</ConverterName>
+<LHEncoding>SHREE-DEV-0715</LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>SHREE-DEV-0715.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>
+<TECConverter id="5"> 
+<Language>Marathi</Language>
+<ConverterName>"DV_ME_SHREE0708&lt;&gt;Unicode"</ConverterName>
+<LHEncoding>DV_ME_SHREE0708</LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>DV_ME_SHREE0708.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>
+<TECConverter id="6"> 
+<Language>Marathi</Language>
+<ConverterName>"DV_ME_SHREE0709&lt;&gt;Unicode"</ConverterName>
+<LHEncoding>DV_ME_SHREE0709</LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>DV_ME_SHREE0709.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>
+<TECConverter id="7"> 
+<Language>Marathi</Language>
+<ConverterName>"DV_ME_SHREE0715&lt;&gt;Unicode"</ConverterName>
+<LHEncoding>DV_ME_SHREE0715</LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>DV_ME_SHREE0715.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>
+ <!--<TECConverter id="8"> 
+<Language>Tamil</Language>
+<ConverterName>"*&lt;&gt;Unicode"</ConverterName>
+<LHEncoding></LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>WinScrTam.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>-->
+<TECConverter id="9"> 
+<Language>Telugu</Language>
+<ConverterName>"Anupama&lt;&gt;Unicode"</ConverterName>
+<LHEncoding>Anupama</LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>TELAnu2Uni.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>
+<TECConverter id="10"> 
+<Language>Oriya</Language>
+<ConverterName>"AkrutiOriSarala-99&lt;&gt;Unicode"</ConverterName>
+<LHEncoding>AkrutiOriSarala-99</LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>Ori2Uni_AkrutiOriSarala99.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>
+<!--<TECConverter id="11"> 
+<Language>Hindi</Language>
+<ConverterName>"*&lt;&gt;Unicode"</ConverterName>
+<LHEncoding></LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>WinScrDev.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>
+<TECConverter id="12"> 
+<Language>Gujarati</Language>
+<ConverterName>"*&lt;&gt;Unicode"</ConverterName>
+<LHEncoding></LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>WinScrGuj.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>
+<TECConverter id="13"> 
+<Language>Oriya</Language>
+<ConverterName>"*&lt;&gt;Unicode"</ConverterName>
+<LHEncoding></LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>WinScrOri.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>
+<TECConverter id="14"> 
+<Language>Telugu</Language>
+<ConverterName>"*&lt;&gt;Unicode"</ConverterName>
+<LHEncoding></LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>WinScrTel.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>-->
+<TECConverter id="15"> 
+<Language>Gujarati</Language>
+<ConverterName>"GujaratiLS&lt;&gt;Unicode"</ConverterName>
+<LHEncoding>GujaratiLS</LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>GujaratiLS.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>
+<TECConverter id="16"> 
+<Language>Hindi</Language>
+<ConverterName>"Kruti Dev 010&lt;&gt;Unicode"</ConverterName>
+<LHEncoding>Kruti Dev 010</LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>KrutiDev010.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>
+  <TECConverter id="17"> 
+<Language>Hindi</Language>
+<ConverterName>"Kruti Dev 011&lt;&gt;Unicode"</ConverterName>
+<LHEncoding>Kruti Dev 011</LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>KrutiDev011.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>
+  <TECConverter id="18"> 
+<Language>Hindi</Language>
+<ConverterName>"Kruti Dev 290&lt;&gt;Unicode"</ConverterName>
+<LHEncoding>Kruti Dev 290</LHEncoding>
+<RHEncoding>Unicode</RHEncoding>
+<Path>KrutiDev290.tec</Path>
+<ToAndFro>True</ToAndFro>
+</TECConverter>
+  
+</TECConverters>
+<CPConverters>
+<CPConverter id="1"> 
+<Language>Null</Language>
+<ConverterName>Null</ConverterName>
+<LHEncoding>Null</LHEncoding>
+<RHEncoding>Null</RHEncoding>
+<Path>Null</Path>
+<ToAndFro>Null</ToAndFro>
+</CPConverter>
+<CPConverter id="2"> 
+<Language>Null</Language>
+<ConverterName>Null</ConverterName>
+<LHEncoding>Null</LHEncoding>
+<RHEncoding>Null</RHEncoding>
+<Path>Null</Path>
+<ToAndFro>Null</ToAndFro>
+</CPConverter>
+</CPConverters>
+</UnicodeConverters>

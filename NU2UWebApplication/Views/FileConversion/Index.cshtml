@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron" style="text-align:center; background-color:lightcoral">
+    <h1><span class="glyphicon glyphicon-upload" style="color:white"></span>&nbsp;&nbsp;&nbsp;&nbsp;&raquo;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="glyphicon glyphicon-cog" style="color:gray"></span>&nbsp;&nbsp;&nbsp;&nbsp;&raquo;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="glyphicon glyphicon-download" style="color:gray"></span> </h1>
+    <br />
+    <h5>Upload document(s) with legacy text</h5>
+  </div>
+
+<div class="jumbotron" style="text-align:center; background-color:lightcoral">
+    <div class="">
+        @using (Html.BeginForm("UploadSourceFiles", "FileConversion", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <table align="center">
+                <tr>
+                    <td>
+                        <div id="multiple">
+                            <input type="file" class="multiple" name="files" multiple accept="application/msword, text/plain" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <button class="btn btn-success">Upload »</button>
+                    </td>
+                </tr>
+            </table>
+        }
+        <br /><br />
+        <p> @Html.ActionLink("Gor for Text Conversion \u00BB", "Index", "TextConversion", null, new { @class = "btn btn-primary btn-lg" }) </p>
+    </div>   
+</div>

@@ -1,0 +1,83 @@
+﻿@using NU2UWebApplication.Models;
+@using HtmlHelpers.BeginCollectionItem;
+
+@model NU2UWebApplication.Models.ConvertersModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@{
+    List<SelectListItem> listItems = new List<SelectListItem>();
+
+    foreach (NU2UWebApplication.Models.ConverterModel fontChoice in Model.ConvertersList)
+    {
+        listItems.Add(new SelectListItem
+        {
+            Text = fontChoice.SourceFont,
+            Value = fontChoice.TargetFont
+        });
+    }
+
+    List<SelectListItem> targetFontlistItems = new List<SelectListItem>();
+
+    foreach (string TargetFont in Model.TargetFontList)
+    {
+            targetFontlistItems.Add(new SelectListItem
+            {
+                Text = TargetFont,
+                Value = TargetFont,
+                Selected = (TargetFont == "Arial Unicode MS")? true: false
+            });
+    }
+}
+
+
+<div class="jumbotron" style="text-align:center; background-color:lightcoral">
+    <h1><span class="glyphicon glyphicon-upload" style="color:green"></span>&nbsp;&nbsp;&nbsp;&nbsp;&raquo;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="glyphicon glyphicon-cog" style="color:white"></span>&nbsp;&nbsp;&nbsp;&nbsp;&raquo;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="glyphicon glyphicon-download" style="color:gray"></span> </h1>
+    <br />
+    <h5>You can choose converters!</h5>
+  </div>
+
+<div class="jumbotron" style="text-align:center; background-color:lightcoral">
+    <div class="">
+     @using (Html.BeginForm("Convert", "FileConversion", FormMethod.Post))
+     {
+        <table class="table-bordered" align="center">
+            @*/*Build out header*/*@
+            <tr>
+                <th>Source Font</th>
+                <th>Converter</th>
+                <th>Target Font</th>
+            </tr>
+            @*/* Add row of our player attributes */*@
+           
+                @foreach (ConverterModel a in Model.ConvertersList)
+                {
+                    <tr>
+                        @using (Html.BeginCollectionItem("ConvertersList"))
+                        {
+                        <td>
+                            @Html.Label("SourceFont", a.SourceFont)
+                            @Html.Hidden("SourceFont", a.SourceFont)
+                        </td>
+                        <td>
+                            @if(a.IsConverterAvailable)
+                            { 
+                                @Html.Label("True")
+                            }
+                        </td>
+                        <td>
+                            @Html.DropDownList("TargetFont", targetFontlistItems)
+                        </td>
+                        }
+                    </tr>
+                }
+
+        </table>
+        <input class="btn btn-success" type="submit" name="Next" value="Convert »" />
+     }
+    </div>   
+</div>

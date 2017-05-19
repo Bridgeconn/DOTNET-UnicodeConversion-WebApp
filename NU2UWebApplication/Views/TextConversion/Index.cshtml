@@ -1,0 +1,86 @@
+﻿@using NU2UWebApplication.Models;
+@model NU2UWebApplication.Models.TextConversionViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+    List<SelectListItem> unicodeFontlistItems = new List<SelectListItem>();
+    List<SelectListItem> nonUnicodeFontlistItems = new List<SelectListItem>();
+
+    foreach (string TargetFont in Model.UnicodeFontList)
+    {
+        unicodeFontlistItems.Add(new SelectListItem
+        {
+            Text = TargetFont,
+            Value = TargetFont,
+            Selected = (TargetFont == "Arial Unicode MS") ? true : false
+        });
+    }
+
+    foreach (string TargetFont in Model.NonUnicodeFontList)
+    {
+        nonUnicodeFontlistItems.Add(new SelectListItem
+        {
+            Text = TargetFont,
+            Value = TargetFont,
+            Selected = (TargetFont == "DV_ME_Shree0708") ? true : false
+        });
+    }
+}
+<div class="jumbotron" style="text-align:center; background-color:lightcoral">
+    @{ 
+        if (!string.IsNullOrEmpty(Model.UnicodeText) && !string.IsNullOrEmpty(Model.NonUnicodeText))
+        {
+        <h1><span class="glyphicon glyphicon-cog" style="color:green"></span></h1>
+        }
+        else
+        {
+            <h1><span class="glyphicon glyphicon-cog" style="color:white"></span></h1>
+        }
+    }
+
+    @*&nbsp;&nbsp;&nbsp;&nbsp;&raquo;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="glyphicon glyphicon-cog" style="color:gray"></span>&nbsp;&nbsp;&nbsp;&nbsp;&raquo;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="glyphicon glyphicon-circle-arrow-down" style="color:gray"></span> *@
+    <br />
+    <h5>Text conversion</h5>
+  </div>
+
+<div class="jumbotron" style="text-align:center; background-color:lightcoral">
+    <div class="">
+        @using (Html.BeginForm("Convert", "TextConversion", FormMethod.Post))
+        {
+            <table class="table-bordered" align="center">
+                @*/*Build out header*/*@
+                <tr>
+                    <th style="text-align: center;">Non-Unicode Text</th>
+                    <th>« »</th>
+                    <th style="text-align: center;">Unicode Text</th>
+                </tr>
+                                                  
+                            <tr>
+                                <td style="text-align: center;">                                   
+                                    @Html.DropDownList("SelectedNonUnicodeFont", nonUnicodeFontlistItems)
+                                </td>
+                                <td></td>
+                               <td style="text-align: center;">
+                                    @Html.DropDownList("SelectedUnicodeFont", unicodeFontlistItems)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    @Html.TextAreaFor(x=>x.NonUnicodeText, 5, 40, null)
+                                </td>
+                                <td>« » </td>
+                                <td style="text-align: center;">
+                                   @Html.TextAreaFor(x => x.UnicodeText, 5, 40, null)
+                                </td>
+                            </tr>
+            </table>
+            <br/>
+            <input class="btn btn-success" type="submit" name="Next" value="Convert" />
+            <br />
+            <br />
+        }
+        <p> @Html.ActionLink("Gor for File Conversion \u00BB", "Index", "FileConversion", null, new { @class = "btn btn-primary btn-lg" }) </p>
+    </div>   
+</div>

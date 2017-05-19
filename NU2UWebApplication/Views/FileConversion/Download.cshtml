@@ -1,0 +1,43 @@
+﻿@using NU2UWebApplication.Models;
+@model NU2UWebApplication.Models.FilesConversionViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron" style="text-align:center; background-color:lightcoral">
+    <h1><span class="glyphicon glyphicon-upload" style="color:green"></span>&nbsp;&nbsp;&nbsp;&nbsp;&raquo;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="glyphicon glyphicon-cog" style="color:green"></span>&nbsp;&nbsp;&nbsp;&nbsp;&raquo;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="glyphicon glyphicon-download" style="color:white"></span> </h1>
+    <br />
+    <h5>You are ready to download!</h5>
+  </div>
+
+<div class="jumbotron" style="text-align:center; background-color:lightcoral">
+    <div class="">
+        <table class="table-bordered" align="center">
+            @*/*Build out header*/*@
+            <tr>
+                <th>Input File</th>
+                <th>Converted File</th>
+            </tr>
+            @*/* Add row of our player attributes */*@
+
+            @for(int i=0;i< Model.InputFileList.Count;i++)
+            {
+                <tr>
+                    <td>
+                    @Html.Label("InputFile", Model.InputFileList[i])
+                   </td>
+                   <td>
+                       <a href="@Model.OutputFileList[i]" download><button class="btn btn-success" type="submit">Download  »</button></a>
+                </td>
+                </tr>
+            }
+</table>
+        <br /><br />
+        <p>@Html.ActionLink("Text Conversion \u00BB", "Index", "TextConversion", null, new { @class = "btn btn-primary btn-lg" })&nbsp;&nbsp;&nbsp;&nbsp;@Html.ActionLink("File Conversion \u00BB", "Index", "FileConversion", null, new { @class = "btn btn-primary btn-lg" }) </p>
+
+</div>      
+</div>
+
