@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38A0B2C2-E793-4B05-89B4-598B1675BA77}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SILBulkWordConverter</RootNamespace>
+    <AssemblyName>SILBulkWordConverter</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ECInterfaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f1447bae1e63f485, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\ECInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="SilEncConverters40, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f1447bae1e63f485, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\SilEncConverters40.dll</HintPath>
+    </Reference>
+    <Reference Include="SilIndicEncConverters40, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f1447bae1e63f485, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\SilIndicEncConverters40.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConverterFactory.cs" />
+    <Compile Include="ConverterRequest.cs" />
+    <Compile Include="UserRequest.cs" />
+    <Compile Include="UserResponse.cs" />
+    <Compile Include="XMLParseToClassUtility.cs" />
+    <Compile Include="XMLUnicodeConverters.cs" />
+    <Compile Include="ConverterUtility.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="FileFinderForFonts.cs" />
+    <Compile Include="IProcessMessenger.cs" />
+    <Compile Include="ProcessIntermediateResult.cs" />
+    <Compile Include="ProcessManager.cs" />
+    <Compile Include="DocXmlDocument.cs" />
+    <Compile Include="IteratorMap.cs" />
+    <Compile Include="LinqDocument.cs" />
+    <Compile Include="ProcessRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessResult.cs" />
+    <Compile Include="Word03MLDocument.cs" />
+    <Compile Include="StyleClass.cs" />
+    <Compile Include="WordLinqDocument.cs" />
+    <Compile Include="WordMLDocument.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libs\AIGuesserEC.dll" />
+    <Content Include="Libs\CcEC.dll" />
+    <Content Include="Libs\ECDriver.dll" />
+    <Content Include="Libs\ECInterfaces.dll" />
+    <Content Include="Libs\Geckofx-Core.dll" />
+    <Content Include="Libs\Geckofx-Winforms.dll" />
+    <Content Include="Libs\GuesserEC.dll" />
+    <Content Include="Libs\IcuConvEC.dll" />
+    <Content Include="Libs\icudt54.dll" />
+    <Content Include="Libs\IcuEC.dll" />
+    <Content Include="Libs\icuin54.dll" />
+    <Content Include="Libs\IcuRegexEC.dll" />
+    <Content Include="Libs\IcuTranslitEC.dll" />
+    <Content Include="Libs\icuuc54.dll" />
+    <Content Include="Libs\PerlExpressionEC.dll" />
+    <Content Include="Libs\PyScriptEC.dll" />
+    <Content Include="Libs\PyScriptEncConverter.dll" />
+    <Content Include="Libs\python27.dll" />
+    <Content Include="Libs\pythoncom27.dll" />
+    <Content Include="Libs\SilEncConverters40.dll" />
+    <Content Include="Libs\SilIndicEncConverters40.dll" />
+    <Content Include="MergeSingleCharacterRunsWordML - Copy.xslt" />
+    <Content Include="MergeSingleCharacterRunsWordML.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
