@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -81,10 +82,6 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="SILBulkWordConverter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Libs\SILBulkWordConverter.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -252,9 +249,6 @@
     <Content Include="Libs\Geckofx-Core.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\SILBulkWordConverter.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Libs\SilEncConverters40.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -273,6 +267,13 @@
     <Content Include="Libs\Maps\SHREE_DEV_0708E.tec" />
     <Content Include="Libs\Maps\SHREE_DEV_0714.tec" />
     <Content Include="Libs\Maps\SHREE_DEV_0715.tec" />
+    <Content Include="fonts\DV_MEW_Shree0708.ttf" />
+    <Content Include="fonts\DV_ME_Shree0709.ttf" />
+    <Content Include="fonts\DV_ME_Shree0715.ttf" />
+    <Content Include="fonts\S07080F0.TTF" />
+    <Content Include="fonts\S07080F2.TTF" />
+    <Content Include="fonts\S07140F2.TTF" />
+    <Content Include="fonts\S07150F2.TTF" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -336,6 +337,12 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Scripts\MarathiNU-U\ConsoleApplication1\SILBulkWordConverter\SILBulkWordConverter.csproj">
+      <Project>{38a0b2c2-e793-4b05-89b4-598b1675ba77}</Project>
+      <Name>SILBulkWordConverter</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -6,7 +6,7 @@ using System.Web;
 
 namespace NU2UWebApplication
 {
-    public class Logger : IProcessMessenger
+    public class Logger : IProcessMessenger 
     {
             public delegate void GetNotifiedDelegate(ProcessIntermediateResult processResult);
             GetNotifiedDelegate GetNotified;
