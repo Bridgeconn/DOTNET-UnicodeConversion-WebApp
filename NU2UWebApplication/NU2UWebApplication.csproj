@@ -260,13 +260,6 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\DV_ME_SHREE0708.tec" />
-    <Content Include="Libs\Maps\DV_ME_SHREE0709.tec" />
-    <Content Include="Libs\Maps\DV_ME_SHREE0715.tec" />
-    <Content Include="Libs\Maps\SHREE_DEV_0708.tec" />
-    <Content Include="Libs\Maps\SHREE_DEV_0708E.tec" />
-    <Content Include="Libs\Maps\SHREE_DEV_0714.tec" />
-    <Content Include="Libs\Maps\SHREE_DEV_0715.tec" />
     <Content Include="fonts\DV_MEW_Shree0708.ttf" />
     <Content Include="fonts\DV_ME_Shree0709.ttf" />
     <Content Include="fonts\DV_ME_Shree0715.ttf" />
@@ -283,6 +276,24 @@
     <Content Include="fonts\Krutidev_1.TTF" />
     <Content Include="fonts\Krutidev_2.TTF" />
     <Content Include="fonts\Krutidev_011.TTF" />
+    <Content Include="Libs\Maps\DV_ME_SHREE0708.tec" />
+    <Content Include="Libs\Maps\DV_ME_SHREE0709.tec" />
+    <Content Include="Libs\Maps\DV_ME_SHREE0715.tec" />
+    <Content Include="Libs\Maps\GujaratiLS.tec" />
+    <Content Include="Libs\Maps\KrutiDev010.tec" />
+    <Content Include="Libs\Maps\KrutiDev011.tec" />
+    <Content Include="Libs\Maps\KrutiDev290.tec" />
+    <Content Include="Libs\Maps\Ori2Uni_AkrutiOriSarala99.tec" />
+    <Content Include="Libs\Maps\SHREE-DEV-0708.tec" />
+    <Content Include="Libs\Maps\SHREE-DEV-0708E.tec" />
+    <Content Include="Libs\Maps\SHREE-DEV-0714.tec" />
+    <Content Include="Libs\Maps\SHREE-DEV-0715.tec" />
+    <Content Include="Libs\Maps\TELAnu2Uni.tec" />
+    <Content Include="Libs\Maps\WinScrDev.tec" />
+    <Content Include="Libs\Maps\WinScrGuj.tec" />
+    <Content Include="Libs\Maps\WinScrOri.tec" />
+    <Content Include="Libs\Maps\WinScrTam.tec" />
+    <Content Include="Libs\Maps\WinScrTel.tec" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
