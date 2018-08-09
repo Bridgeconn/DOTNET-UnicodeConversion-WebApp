@@ -276,15 +276,6 @@
     <Content Include="fonts\Krutidev_1.TTF" />
     <Content Include="fonts\Krutidev_2.TTF" />
     <Content Include="fonts\Krutidev_011.TTF" />
-    <Content Include="Libs\Maps\DV_ME_SHREE0708.tec">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Libs\Maps\DV_ME_SHREE0709.tec">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Libs\Maps\DV_ME_SHREE0715.tec">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Libs\Maps\GujaratiLS.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -328,6 +319,36 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Libs\Maps\WinScrTel.tec">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Maps\DV_ME_SHREE0708.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Maps\DV_ME_SHREE0709.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Maps\DV_ME_SHREE0715.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Maps\SHREE-DEV-0708.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Maps\SHREE-DEV-0708E.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Maps\SHREE-DEV-0714.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Maps\SHREE-DEV-0715.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Maps\DV_ME_SHREE0708.tec">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Maps\DV_ME_SHREE0709.tec">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Maps\DV_ME_SHREE0715.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

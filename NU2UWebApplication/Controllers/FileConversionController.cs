@@ -130,7 +130,7 @@ namespace NU2UWebApplication.Controllers
                 Session["ProcessManager"] = processManager;
 
                 // ProcessResult is for the result for the steps & ProcessIntermediateResult is the in between messages
-                ProcessResult resultMessage = processManager.Initialize(Server.MapPath("~/bin/Converters.xml"), Server.MapPath("~/bin/maps/"));
+                ProcessResult resultMessage = processManager.Initialize(Server.MapPath("~/bin/libs/Converters.xml"), Server.MapPath("~/bin/maps/"));
 
                 switch (resultMessage.ResultType)
                 {

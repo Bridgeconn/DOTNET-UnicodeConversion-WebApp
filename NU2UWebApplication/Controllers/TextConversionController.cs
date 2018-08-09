@@ -155,7 +155,7 @@ namespace NU2UWebApplication.Controllers
             model.UnicodeFontList = ConverterFactory.GetInstalledFonts();
             if (!ConverterFactory.IsLoaded)
             {
-                ConverterFactory.initialize(Server.MapPath("~/bin/Converters.xml"), Server.MapPath("~/bin/maps/"));
+                ConverterFactory.initialize(Server.MapPath("~/bin/libs/Converters.xml"), Server.MapPath("~/bin/maps/"));
             }
 
             var list = ConverterFactory.GetSupportedNonUnicodeFonts();
