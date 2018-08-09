@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NU2UWebApplication", "NU2UW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SILBulkWordConverter", "SILBulkWordConverter\SILBulkWordConverter.csproj", "{38A0B2C2-E793-4B05-89B4-598B1675BA77}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5E59EDF4-2EEB-469F-891A-5C9EBE76E25F}"
+	ProjectSection(SolutionItems) = preProject
+		README.docx = README.docx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
