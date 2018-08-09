@@ -274,6 +274,15 @@
     <Content Include="fonts\S07080F2.TTF" />
     <Content Include="fonts\S07140F2.TTF" />
     <Content Include="fonts\S07150F2.TTF" />
+    <Content Include="fonts\Aakriti.ttf" />
+    <Content Include="fonts\ANUPM.TTF" />
+    <Content Include="fonts\DV_ME_Shree0708.ttf" />
+    <Content Include="fonts\DV_ME_Shree0714.ttf" />
+    <Content Include="fonts\Kruti_Dev_010.ttf" />
+    <Content Include="fonts\Kruti-Dev-010_0.ttf" />
+    <Content Include="fonts\Krutidev_1.TTF" />
+    <Content Include="fonts\Krutidev_2.TTF" />
+    <Content Include="fonts\Krutidev_011.TTF" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
