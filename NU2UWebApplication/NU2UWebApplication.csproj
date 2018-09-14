@@ -235,26 +235,60 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\bg.jpg" />
+    <Content Include="EC\Plugins\AI 4.0.0.0 Plugin Details.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EC\Plugins\CC 4.0.0.0 Plugin Details.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EC\Plugins\EC 4.0.0.0 Plugin Details.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EC\Plugins\IcuEC 4.0.0.0 Plugin Details.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Libs\AIGuesserEC.dll" />
+    <Content Include="Libs\CcEC.dll" />
     <Content Include="Libs\Converters.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Libs\ECDriver.dll" />
     <Content Include="Libs\ECInterfaces.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Libs\Geckofx-Core.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Libs\Geckofx-Winforms.dll" />
+    <Content Include="Libs\GuesserEC.dll" />
+    <Content Include="Libs\IcuConvEC.dll" />
+    <Content Include="Libs\icudt54.dll" />
+    <Content Include="Libs\IcuEC.dll" />
+    <Content Include="Libs\icuin54.dll" />
+    <Content Include="Libs\IcuRegexEC.dll" />
+    <Content Include="Libs\IcuTranslitEC.dll" />
+    <Content Include="Libs\icuuc54.dll" />
+    <Content Include="Libs\PerlExpressionEC.dll" />
+    <Content Include="Libs\PyScriptEC.dll" />
+    <Content Include="Libs\PyScriptEncConverter.dll" />
+    <Content Include="Libs\python27.dll" />
+    <Content Include="Libs\pythoncom27.dll" />
+    <Content Include="Libs\SecOffice_COMAddInShim13.dll" />
+    <Content Include="Libs\SecOffice_ManagedAggregator13.dll" />
+    <Content Include="Libs\SILConvertersOffice13.dll" />
     <Content Include="Libs\SilEncConverters40.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Libs\SilIndicEncConverters40.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Libs\SpellingFixerEC.dll" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -276,79 +310,79 @@
     <Content Include="fonts\Krutidev_1.TTF" />
     <Content Include="fonts\Krutidev_2.TTF" />
     <Content Include="fonts\Krutidev_011.TTF" />
-    <Content Include="Libs\Maps\GujaratiLS.tec">
+    <Content Include="Maps\DV_ME_SHREE0708.map">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\KrutiDev010.tec">
+    <Content Include="Maps\DV_ME_SHREE0708.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\KrutiDev011.tec">
+    <Content Include="Maps\DV_ME_SHREE0709.map">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\KrutiDev290.tec">
+    <Content Include="Maps\DV_ME_SHREE0709.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\Ori2Uni_AkrutiOriSarala99.tec">
+    <Content Include="Maps\DV_ME_SHREE0715.map">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\SHREE-DEV-0708.tec">
+    <Content Include="Maps\DV_ME_SHREE0715.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\SHREE-DEV-0708E.tec">
+    <Content Include="Maps\GujaratiLS.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\SHREE-DEV-0714.tec">
+    <Content Include="Maps\KrutiDev010.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\SHREE-DEV-0715.tec">
+    <Content Include="Maps\KrutiDev011.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\TELAnu2Uni.tec">
+    <Content Include="Maps\KrutiDev290.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\WinScrDev.tec">
+    <Content Include="Maps\Ori2Uni_AkrutiOriSarala99.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\WinScrGuj.tec">
+    <Content Include="Maps\SHREE-DEV-0708.map">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\WinScrOri.tec">
+    <Content Include="Maps\SHREE-DEV-0708.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\WinScrTam.tec">
+    <Content Include="Maps\SHREE-DEV-0708E.map">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\WinScrTel.tec">
+    <Content Include="Maps\SHREE-DEV-0708E.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\DV_ME_SHREE0708.map">
+    <Content Include="Maps\SHREE-DEV-0714.map">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\DV_ME_SHREE0709.map">
+    <Content Include="Maps\SHREE-DEV-0714.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\DV_ME_SHREE0715.map">
+    <Content Include="Maps\SHREE-DEV-0715.map">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\SHREE-DEV-0708.map">
+    <Content Include="Maps\SHREE-DEV-0715.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\SHREE-DEV-0708E.map">
+    <Content Include="Maps\TELAnu2Uni.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\SHREE-DEV-0714.map">
+    <Content Include="Maps\WinScrDev.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\SHREE-DEV-0715.map">
+    <Content Include="Maps\WinScrGuj.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\DV_ME_SHREE0708.tec">
+    <Content Include="Maps\WinScrOri.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\DV_ME_SHREE0709.tec">
+    <Content Include="Maps\WinScrTam.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\Maps\DV_ME_SHREE0715.tec">
+    <Content Include="Maps\WinScrTel.tec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -363,6 +397,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="SILConvertersWordML.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

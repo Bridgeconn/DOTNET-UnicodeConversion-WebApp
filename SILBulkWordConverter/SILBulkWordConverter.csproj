@@ -112,27 +112,81 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Libs\AIGuesserEC.dll" />
-    <Content Include="Libs\CcEC.dll" />
-    <Content Include="Libs\ECDriver.dll" />
-    <Content Include="Libs\ECInterfaces.dll" />
-    <Content Include="Libs\Geckofx-Core.dll" />
-    <Content Include="Libs\Geckofx-Winforms.dll" />
-    <Content Include="Libs\GuesserEC.dll" />
-    <Content Include="Libs\IcuConvEC.dll" />
-    <Content Include="Libs\icudt54.dll" />
-    <Content Include="Libs\IcuEC.dll" />
-    <Content Include="Libs\icuin54.dll" />
-    <Content Include="Libs\IcuRegexEC.dll" />
-    <Content Include="Libs\IcuTranslitEC.dll" />
-    <Content Include="Libs\icuuc54.dll" />
-    <Content Include="Libs\PerlExpressionEC.dll" />
-    <Content Include="Libs\PyScriptEC.dll" />
-    <Content Include="Libs\PyScriptEncConverter.dll" />
-    <Content Include="Libs\python27.dll" />
-    <Content Include="Libs\pythoncom27.dll" />
-    <Content Include="Libs\SilEncConverters40.dll" />
-    <Content Include="Libs\SilIndicEncConverters40.dll" />
+    <Content Include="Libs\AIGuesserEC.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\CcEC.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\ECDriver.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\ECInterfaces.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Geckofx-Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Geckofx-Winforms.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\GuesserEC.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\IcuConvEC.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\icudt54.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\IcuEC.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\icuin54.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\IcuRegexEC.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\IcuTranslitEC.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\icuuc54.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\PerlExpressionEC.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\PyScriptEC.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\PyScriptEncConverter.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\python27.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\pythoncom27.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\SecOffice_COMAddInShim13.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\SecOffice_ManagedAggregator13.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\SILConvertersOffice13.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\SilEncConverters40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\SilIndicEncConverters40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\SpellingFixerEC.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="MergeSingleCharacterRunsWordML - Copy.xslt" />
     <Content Include="MergeSingleCharacterRunsWordML.xslt" />
   </ItemGroup>
