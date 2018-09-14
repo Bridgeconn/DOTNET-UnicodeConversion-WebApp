@@ -155,13 +155,13 @@ namespace SILConvertersWordML
                 if (isFound) // TBD
                 {
                     EncConverters aECs = new EncConverters();
-                    IEncConverter tecConverter = aECs.InstantiateIEncConverter("SilEncConverters40.TecEncConverter", null);
+                    IEncConverter tecConverter = new TecEncConverter(); //aECs.InstantiateIEncConverter("SilEncConverters40.TecEncConverter", null);
                     ConvType conversionType = ConvType.Legacy_to_from_Unicode;
-                    string lhs = converterRequest.LHEncodingField; //"SD708";
-                    string rhs = "Unicode"; //converterRequest.RHEncodingField;
-                    int pt = 0;
+                    string lhs = null;//converterRequest.LHEncodingField; //"SD708";
+                    string rhs = null;//"Unicode"; //converterRequest.RHEncodingField;
+                    int pt = (int) ProcessTypeFlags.DontKnow;
                     string tecFilePath = "\"" + System.IO.Path.Combine(configurationMapsPath, unicodeConverter.Path) + "\"";
-                    tecConverter.Initialize(unicodeConverter.ConverterName, tecFilePath, ref lhs, ref rhs, ref conversionType, ref pt, 0, 0, false);
+                    tecConverter.Initialize(unicodeConverter.ConverterName, tecFilePath, ref lhs, ref rhs, ref conversionType, ref pt, 0, 0, true);
                     tecConverter.DirectionForward = converterRequest.IsLegacyToUnicode;
                     encConverter = new DirectableEncConverter(tecConverter);
                     unicodeConverters.Add(encConverter);
@@ -269,7 +269,7 @@ namespace SILConvertersWordML
 
                 if (encConverter != null)
                 {
-                    resultText = encConverter.SafeConvert(inputText);
+                    resultText = encConverter.Convert(inputText);
                     return true;
                 }
             }
