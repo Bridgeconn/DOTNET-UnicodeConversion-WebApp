@@ -125,7 +125,7 @@ namespace SILConvertersWordML
                     string rhs = "Unicode"; //converterRequest.RHEncodingField;
                     int pt = 0;
                     string tecFilePath = System.IO.Path.Combine(configurationMapsPath, unicodeConverter.Path);
-                    tecConverter.Initialize(unicodeConverter.ConverterName, tecFilePath, ref lhs, ref rhs, ref conversionType, ref pt, 0, 0, false);
+                    tecConverter.Initialize(unicodeConverter.ConverterName, tecFilePath, ref lhs, ref rhs, ref conversionType, ref pt, 42, 0, false);
                     tecConverter.DirectionForward = converterRequest.IsLegacyToUnicode;
                     encConverter = new DirectableEncConverter(tecConverter);
                     unicodeConverters.Add(encConverter);
