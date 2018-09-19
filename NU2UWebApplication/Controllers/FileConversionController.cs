@@ -41,7 +41,8 @@ namespace NU2UWebApplication.Controllers
                 // if all is well - move to convert
                 if (filePaths.Count == files.Count())
                 {
-                    if(InitializeTheConversionProcess(filePaths))
+                    ProcessResult result = new ProcessResult();
+                    if (InitializeTheConversionProcess(filePaths, ref result))
                     {
                         ConvertersModel convertersModel = new ConvertersModel();
 
@@ -63,6 +64,7 @@ namespace NU2UWebApplication.Controllers
                     {
                         // logMessages could be used to present the user; // signalR for sending updates
                         // return with error
+                        return View("Conversion", new ConvertersModel(){Error = result.Message});
                     }
                 }
             }
@@ -86,30 +88,30 @@ namespace NU2UWebApplication.Controllers
             }
 
             // update converters
-
+            ProcessResult processResult = new ProcessResult();
             // call the conversion
-            if (CarryOutConversion())
+            if (CarryOutConversion(ref processResult))
             {
                 var fileModel = new FilesConversionViewModel();
 
-                if(processManager.mapInputOutputFiles.Count > 0)
-                {                    
-                    foreach(string inputFile in processManager.mapInputOutputFiles.Keys)
+                if (processManager.mapInputOutputFiles.Count > 0)
+                {
+                    foreach (string inputFile in processManager.mapInputOutputFiles.Keys)
                     {
                         string originalFileName = Path.GetFileName(inputFile);
                         originalFileName = originalFileName.Substring(0, originalFileName.LastIndexOf("("));
-                        originalFileName+= inputFile.Substring(inputFile.LastIndexOf(")") + 1);
+                        originalFileName += inputFile.Substring(inputFile.LastIndexOf(")") + 1);
                         fileModel.InputFileList.Add(originalFileName);
                         fileModel.OutputFileList.Add("/InputFiles/" + processManager.mapInputOutputFiles[inputFile]);
                     }
                 }
-              
+
                 return View("Download", fileModel);
             }
             else
             {
                 //show the error from the log messages
-
+                return View("Download", new FilesConversionViewModel() { Error = processResult.Message });
             }
 
             return View("Download");
@@ -118,7 +120,7 @@ namespace NU2UWebApplication.Controllers
 
         #region private methods
 
-        bool InitializeTheConversionProcess(List<string> filePaths)
+        bool InitializeTheConversionProcess(List<string> filePaths, ref ProcessResult processResult)
         {
             bool result =false;
             try
@@ -130,9 +132,9 @@ namespace NU2UWebApplication.Controllers
                 Session["ProcessManager"] = processManager;
 
                 // ProcessResult is for the result for the steps & ProcessIntermediateResult is the in between messages
-                ProcessResult resultMessage = processManager.Initialize(Server.MapPath("~/bin/libs/Converters.xml"), Server.MapPath("~/bin/maps/"));
+                processResult = processManager.Initialize(Server.MapPath("~/bin/libs/Converters.xml"), Server.MapPath("~/bin/maps/"));
 
-                switch (resultMessage.ResultType)
+                switch (processResult.ResultType)
                 {
                     case ResultType.Completed:
                         isProceedToNext = true;
@@ -144,10 +146,10 @@ namespace NU2UWebApplication.Controllers
 
                 if (isProceedToNext)
                 {
-                    resultMessage = processManager.LoadInputDocuments(processRequest.InputFiles);
+                    processResult = processManager.LoadInputDocuments(processRequest.InputFiles);
                 }
 
-                switch (resultMessage.ResultType)
+                switch (processResult.ResultType)
                 {
                     case ResultType.Completed:
                         // get the font selection
@@ -160,12 +162,9 @@ namespace NU2UWebApplication.Controllers
 
                 if (isProceedToNext)
                 {
-                    
                     result = true;
                     //resultMessage = processManager.AutoChooseConverters();
                 }
-
-                
             }
             catch (Exception exception)
             {
@@ -175,11 +174,11 @@ namespace NU2UWebApplication.Controllers
             return result;
         }
 
-        bool CarryOutConversion()
+        bool CarryOutConversion(ref ProcessResult resultMessage)
         {
             bool result = false;
             ProcessManager processManager = (ProcessManager)Session["ProcessManager"];
-            ProcessResult resultMessage = processManager.ConvertAndSaveDocuments();
+            resultMessage = processManager.ConvertAndSaveDocuments();
             if(resultMessage.ResultType == ResultType.Completed)
             {
                 // prepare download model

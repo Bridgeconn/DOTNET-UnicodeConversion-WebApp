@@ -22,6 +22,8 @@ namespace NU2UWebApplication.Models
 
         public List<ConverterModel> ConvertersList { get; set; }
 
+        public string Error { get; set; }
+
         public ConvertersModel()
         {
             ConvertersList = new List<ConverterModel>();

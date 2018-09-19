@@ -47,34 +47,41 @@
      {
         <table class="table-bordered" align="center">
             @*/*Build out header*/*@
+            @if(!string.IsNullOrEmpty(Model.Error))
+            {
+            <tr>
+                <td colspan="3">*** Error:@Model. ***</td>
+            </tr>
+            }
             <tr>
                 <th>Source Font</th>
                 <th>Converter</th>
                 <th>Target Font</th>
             </tr>
             @*/* Add row of our player attributes */*@
-           
-                @foreach (ConverterModel a in Model.ConvertersList)
-                {
-                    <tr>
-                        @using (Html.BeginCollectionItem("ConvertersList"))
-                        {
+
+
+            @foreach (ConverterModel a in Model.ConvertersList)
+            {
+                <tr>
+                    @using (Html.BeginCollectionItem("ConvertersList"))
+                    {
                         <td>
                             @Html.Label("SourceFont", a.SourceFont)
                             @Html.Hidden("SourceFont", a.SourceFont)
                         </td>
                         <td>
-                            @if(a.IsConverterAvailable)
-                            { 
+                            @if (a.IsConverterAvailable)
+                            {
                                 @Html.Label("True")
                             }
                         </td>
                         <td>
                             @Html.DropDownList("TargetFont", targetFontlistItems)
                         </td>
-                        }
-                    </tr>
-                }
+                    }
+                </tr>
+            }
 
         </table>
         <input class="btn btn-success" type="submit" name="Next" value="Convert »" />

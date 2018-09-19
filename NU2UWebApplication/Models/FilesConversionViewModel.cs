@@ -21,6 +21,7 @@ namespace NU2UWebApplication.Models
 
         public List<string> OutputFileList { get; set; }
 
+        public string Error { get; set; }
 
     }
 }
